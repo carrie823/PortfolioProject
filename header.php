@@ -15,12 +15,12 @@
 <body>
   
   <div id="header-name">
-    <h1>Portfolio Admin</h1>
+    <a href="dashboard.php"><h1>Portfolio Admin</h1></a>
   <div>
   
   <?php if(isset($_SESSION['id'])): ?>
 
-    <p style="padding: 0 1%; text-align: center;">
+    <p style="padding: 0 1%; text-align: right;">
       <a href="dashboard.php">Dashboard</a> | 
       <a href="logout.php">Logout</a>
     </p>

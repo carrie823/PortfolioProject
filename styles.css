@@ -3,7 +3,7 @@ a:active,
 a:hover,
 a:visited {
   text-decoration: none;
-  color: #FF8500;
+  color: #28666e;
 }
 
 table {
@@ -70,9 +70,9 @@ input {
   box-sizing: border-box;
 }
 
-input[type=submit] {
+input[type="submit"] {
   border: 0;
-  background-color: #eb741d;
+  background-color: #28666e;
   color: #fff;
   padding: 10px 10px;
   font-size: 110%;
@@ -82,6 +82,7 @@ input[type=submit] {
 #dashboard {
   padding: 0;
   margin: 0;
+  display: flex;
 }
 
 #dashboard li a:link,
@@ -91,13 +92,18 @@ input[type=submit] {
   color: #fff;
 }
 
+#dashboard li:hover {
+  background-color: black;
+}
+
 #header-name {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  color: rgb(38, 172, 255);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: #28666e;
 }
 
 #dashboard li {
-  background-color: rgb(38, 172, 255);
+  background-color: #28666e;
   display: inline-block;
   width: 22%;
   margin: 1%;
@@ -109,9 +115,16 @@ input[type=submit] {
   border: none;
   border-radius: 20px;
   font-size: 20px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 #dashboard i {
   margin-bottom: 5px;
+}
+
+#welcomedash {
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
 }
