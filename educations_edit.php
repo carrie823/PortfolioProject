@@ -21,8 +21,9 @@ if( isset( $_POST['institution'] ) )
   {
     
     $query = 'UPDATE educations SET
-      title = "'.mysqli_real_escape_string( $connect, $_POST['institution'] ).'",
-      content = "'.mysqli_real_escape_string( $connect, $_POST['certification'] ).'",
+      institution = "'.mysqli_real_escape_string( $connect, $_POST['institution'] ).'",
+      certification = "'.mysqli_real_escape_string( $connect, $_POST['certification'] ).'",
+      description = "'.mysqli_real_escape_string( $connect, $_POST['description'] ).'",
       year = "'.mysqli_real_escape_string( $connect, $_POST['year'] ).'"
       WHERE id = '.$_GET['id'].'
       LIMIT 1';
@@ -83,7 +84,7 @@ include( 'includes/header.php' );
   <br>
   
   <label for="year">Year:</label>
-  <input type="date" name="year" id="year" value="<?php echo htmlentities( $record['year'] ); ?>">
+  <input type="year" name="year" id="year" value="<?php echo htmlentities( $record['year'] ); ?>">
     
   <br>
   

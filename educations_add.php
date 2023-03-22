@@ -52,7 +52,7 @@ include( 'includes/header.php' );
   
   <br>
   
- <label for="content">Description:</label>
+ <label for="description">Description:</label>
  <textarea type="text" name="description" id="description" rows="10"></textarea>
   
   <br>

@@ -22,9 +22,9 @@ if( isset( $_POST['title'] ) )
     
     $query = 'UPDATE works SET
       title = "'.mysqli_real_escape_string( $connect, $_POST['title'] ).'",
-      content = "'.mysqli_real_escape_string( $connect, $_POST['company'] ).'",
-      date = "'.mysqli_real_escape_string( $connect, $_POST['description'] ).'",
-      type = "'.mysqli_real_escape_string( $connect, $_POST['date'] ).'"
+      company = "'.mysqli_real_escape_string( $connect, $_POST['company'] ).'",
+      description = "'.mysqli_real_escape_string( $connect, $_POST['description'] ).'",
+      date = "'.mysqli_real_escape_string( $connect, $_POST['date'] ).'"
       WHERE id = '.$_GET['id'].'
       LIMIT 1';
     mysqli_query( $connect, $query );
@@ -73,12 +73,12 @@ include( 'includes/header.php' );
     
   <br>
 
-  <label for="title">Company:</label>
+  <label for="company">Company:</label>
   <input type="text" name="company" id="company" value="<?php echo htmlentities( $record['company'] ); ?>">
 
-   <br>
+  <br>
   
-  <label for="content">Description:</label>
+  <label for="description">Description:</label>
   <textarea type="text" name="description" id="description" rows="10"><?php echo htmlentities( $record['description'] ); ?></textarea>
   
   <br>
